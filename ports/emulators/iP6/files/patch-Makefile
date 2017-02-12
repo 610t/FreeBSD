@@ -1,0 +1,16 @@
+--- Makefile.orig	1999-06-01 23:29:51 UTC
++++ Makefile
+@@ -38,11 +38,11 @@ CC      = gcc
+ 
+ # --- DEFINES ---
+ # - for Linux -
+-DEFINES = -DUNIX -DLSB_FIRST -DDEBUG -DLINUX -DMITSHM -DSOUND
++#DEFINES = -DUNIX -DLSB_FIRST -DDEBUG -DLINUX -DMITSHM -DSOUND
+ # - for BSDI BSD/OS -
+ # DEFINES = -DUNIX -DLSB_FIRST -DDEBUG -DMITSHM
+ # - for freeBSD -
+-# DEFINES = -DUNIX -DLSB_FIRST -DDEBUG -DMITSHM -DSOUND
++DEFINES = -DUNIX -DLSB_FIRST -DDEBUG -DMITSHM -DSOUND
+ 
+ CFLAGS  = -O3 -fomit-frame-pointer -funroll-loops \
+ 	-I/usr/X11R6/include -L/usr/X11R6/lib ${DEFINES}
