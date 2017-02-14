@@ -1,0 +1,13 @@
+--- src/plugins/scratch/Makefile.orig	2017-02-14 21:04:59 UTC
++++ src/plugins/scratch/Makefile
+@@ -1,8 +1,8 @@
+ all: clean build
+ 
+ build:	
+-	gcc $(CFLAGS) -fPIC -c *.c
+-	gcc -shared *.o -o ../../../Plugins/so.ScratchPlugin
++	cc $(CFLAGS) -fPIC -c *.c
++	cc -shared *.o -o ../../../Plugins/so.ScratchPlugin
+ 
+ clean:
+ 	rm -f *.o ../../../Plugins/so.ScratchPlugin
